@@ -2,6 +2,7 @@
   .container {
     width: 768px;
   }
+
   .strategy-list {
     gap: 72px 24px;
     flex-direction: row;
@@ -10,6 +11,10 @@
   .strategy-item {
     width: calc((100% - 24px) / 2);
   }
+  .container > .team-list {
+    width: 552px;
+  }
+
   .team-item {
     width: calc((100% - 24px) / 2);
   }
@@ -36,6 +41,9 @@
   }
   .strategy-list {
     gap: 24px;
+  }
+  .container > .team-list {
+    width: 1158px;
   }
   .icons {
     visibility: visible;

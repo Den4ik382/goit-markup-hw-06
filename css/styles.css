@@ -17,6 +17,7 @@ a {
 }
 img {
   display: block;
+  width: 100%;
 }
 
 ul {
@@ -52,9 +53,10 @@ h6 {
   overflow: hidden;
 }
 .container {
-  width: 1158px;
+  /* width: 1158px; */
+  width: 320px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
 .header {
@@ -219,13 +221,16 @@ h6 {
 }
 
 .strategy {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 .strategy-tittle {
 }
 .strategy-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  /* gap: 24px; */
+  gap: 72px;
   align-items: center;
   justify-content: center;
 }
@@ -240,20 +245,30 @@ h6 {
   justify-content: center;
   margin-bottom: 8px;
   gap: 24px;
+  visibility: hidden;
 }
 .strategy-item {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
   margin: 0 auto;
 }
 .strategy-subtittle {
-  color: var(--NAVY-BLUE, #2e2f42);
+  /* color: var(--NAVY-BLUE, #2e2f42);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  padding-bottom: 8px;
 }
 .strategy-text {
+  align-self: stretch;
   color: var(--SLATE, #434455);
   font-size: 16px;
   font-weight: 400;
@@ -263,7 +278,8 @@ h6 {
 
 .team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 .team-tittle {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -277,9 +293,12 @@ h6 {
 }
 .team-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  /* gap: 24px; */
+  padding: 0 12px;
+  gap: 72px;
 }
 
 .team-item {
@@ -288,7 +307,7 @@ h6 {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
 }
 
 .team-img {
@@ -353,7 +372,8 @@ h6 {
 }
 
 .portfolio {
-  padding: 120px 0 120px 0;
+  /* padding: 120px 0 120px 0; */
+  padding: 96px 0;
 }
 .portfolio-tittle {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -368,11 +388,11 @@ h6 {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
+  /* column-gap: 24px; */
   row-gap: 48px;
 }
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-img {

@@ -2,7 +2,17 @@
   .container {
     width: 768px;
   }
-
+  .header-btn {
+    display: none;
+  }
+  .header-list {
+    display: flex;
+  }
+  .header-addres-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
   .strategy-list {
     gap: 72px 24px;
     flex-direction: row;
@@ -22,6 +32,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 64px 24px;
+    gap: 24px;
+    margin: 0 auto;
   }
   .portfolio-list {
     column-gap: 24px;
@@ -29,12 +41,38 @@
   .portfolio-item {
     width: calc((100% - 24px) / 2);
   }
+  .foot-web-social {
+    display: flex;
+    gap: 24px;
+  }
+  .foot-div-web {
+    align-items: start;
+  }
+  .foot-social-text {
+    text-align: left;
+  }
+  .foot-form {
+    flex-direction: row;
+  }
+  .foot-subscribe-text {
+    text-align: left;
+  }
+  .foot-div {
+    align-items: flex-start;
+    padding-left: 92px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
     padding: 0;
+  }
+  .header-addres-list {
+    flex-direction: row;
+  }
+  .header-addres {
+    margin-left: auto;
   }
   .strategy {
     padding: 120px 0;
@@ -71,5 +109,17 @@
   }
   .portfolio-item {
     width: calc((100% - 48px) / 3);
+  }
+  .foot-div {
+    flex-direction: row;
+  }
+  .foot-subscribe {
+    margin-left: 80px;
+  }
+  .foot-div-web {
+    margin-right: 120px;
+  }
+  .foot-form {
+    gap: 24px;
   }
 }

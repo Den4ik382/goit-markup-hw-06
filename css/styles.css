@@ -54,9 +54,11 @@ h6 {
 }
 .container {
   /* width: 1158px; */
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 16px 0 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -244,27 +246,44 @@ h6 {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mb-1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  /* height: 600px; */
+  /* max-height: 432px; */
   text-align: center;
-  padding: 188px 0;
-  max-width: 1440px;
+  /* padding: 188px 0; */
+  padding: 72px 0;
+  /* max-width: 1440px; */
+  max-width: 320px;
   margin: 0 auto;
 }
-
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-mb-2x.jpg);
+  }
+}
 .hero-tittle {
   color: var(--WHITE, #fff);
   text-align: center;
-  font-size: 56px;
+  /* font-size: 56px; */
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  /* line-height: 1.07; */
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  max-width: 496px;
+  /* max-width: 496px; */
   margin: 0 auto;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
+  margin-bottom: 72px;
+  padding: 0 40px;
 }
 
 .hero-btn {
@@ -281,8 +300,8 @@ h6 {
   padding: 16px 32px;
   border-radius: 4px;
   display: block;
-  min-width: 169px;
-  height: 56px;
+  /* min-width: 169px;
+  height: 56px; */
   border: none;
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -321,7 +340,7 @@ h6 {
   justify-content: center;
   margin-bottom: 8px;
   gap: 24px;
-  visibility: hidden;
+  display: none;
 }
 .strategy-item {
   /* width: calc((100% - 72px) / 4); */

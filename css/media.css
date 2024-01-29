@@ -1,6 +1,7 @@
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
+    padding: 0;
   }
   .header-btn {
     display: none;
@@ -13,6 +14,32 @@
     flex-direction: column;
     gap: 12px;
   }
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tb-1x.jpg);
+    padding: 112px 0;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tb-2x.jpg);
+    }
+  }
+  .hero-tittle {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+    padding: 0 120px;
+  }
   .strategy-list {
     gap: 72px 24px;
     flex-direction: row;
@@ -20,6 +47,8 @@
   }
   .strategy-item {
     width: calc((100% - 24px) / 2);
+  }
+  .icons {
   }
   .container > .team-list {
     width: 552px;
@@ -65,7 +94,7 @@
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding: 0;
   }
   .header-addres-list {
@@ -73,6 +102,31 @@
   }
   .header-addres {
     margin-left: auto;
+  }
+  .hero {
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-dt-1x.jpg);
+    padding: 188px 0;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-dt-2x.jpg);
+    }
+  }
+
+  .hero-tittle {
+    margin-bottom: 48px;
+    padding: 0 331px;
   }
   .strategy {
     padding: 120px 0;

@@ -67,7 +67,7 @@ h6 {
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-  display: flex;
+  /* display: flex; */
   height: 72px;
 }
 
@@ -726,8 +726,10 @@ h6 {
 }
 .modal {
   position: absolute;
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
+  /* width: 408px;
+  min-height: 584px; */
   border-radius: 4px;
   background: var(--DAIRY, #fcfcfc);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),

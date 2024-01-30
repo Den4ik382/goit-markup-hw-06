@@ -1,7 +1,7 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0;
+    padding: 0 16px;
   }
   .header-btn {
     display: none;
@@ -90,6 +90,10 @@
     align-items: flex-start;
     padding-left: 92px;
   }
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -130,6 +134,9 @@
   }
   .strategy {
     padding: 120px 0;
+  }
+  .icons {
+    display: flex;
   }
   .strategy-list {
     gap: 24px;

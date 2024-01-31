@@ -1,7 +1,6 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 16px;
   }
   .header-btn {
     display: none;
@@ -13,6 +12,12 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+  .header-link-addres {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
   }
   .hero {
     max-width: 768px;
@@ -50,12 +55,9 @@
   }
   .icons {
   }
-  .container > .team-list {
-    width: 552px;
-  }
 
   .team-item {
-    width: calc((100% - 24px) / 2);
+    width: 264px;
   }
   .team-list {
     flex-direction: row;
@@ -76,6 +78,7 @@
   }
   .foot-div-web {
     align-items: start;
+    margin-bottom: 0;
   }
   .foot-social-text {
     text-align: left;
@@ -88,7 +91,7 @@
   }
   .foot-div {
     align-items: flex-start;
-    padding-left: 92px;
+    padding-left: 108px;
   }
   .modal {
     width: 408px;
@@ -103,6 +106,12 @@
   }
   .header-addres-list {
     flex-direction: row;
+  }
+  .header-link-addres {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
   .header-addres {
     margin-left: auto;
@@ -141,8 +150,8 @@
   .strategy-list {
     gap: 24px;
   }
-  .container > .team-list {
-    width: 1158px;
+  .strategy-text {
+    font-weight: 400;
   }
   .icons {
     visibility: visible;
